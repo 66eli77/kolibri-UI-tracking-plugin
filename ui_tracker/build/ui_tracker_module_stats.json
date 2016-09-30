@@ -1,1 +1,0 @@
-{"status":"error","error":"EntryModuleNotFoundError","message":"Entry module not found: Error: Cannot resolve 'file' or 'directory' /Users/Eli/Desktop/kolibri-ui-tracking-plugin/ui_tracker/assets/src/module.js in /Users/Eli/Desktop/kolibri","publicPath":"http://localhost:3000/js-dist/"}
