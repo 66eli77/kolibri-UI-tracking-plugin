@@ -1,0 +1,10 @@
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include CHANGELOG.rst
+include LICENSE
+include README.rst
+include requirements.txt
+recursive-exclude ui_tracker/* *pyc
+recursive-include ui_tracker/static *.*
+recursive-include ui_tracker/build *.json
+recursive-exclude ui_tracker/assets *
