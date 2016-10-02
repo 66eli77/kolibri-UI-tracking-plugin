@@ -57,7 +57,7 @@ setup(
     ),
     author='Learning Equality',
     author_email='info@learningequality.org',
-    url='https://github.com/66eli77/kolibri-UI-tracking-plugin',
+    url='https://github.com/66eli77/kolibri-ui-tracking-plugin',
     packages=[
         str('ui_tracker'),  # https://github.com/pypa/setuptools/pull/597
     ],
