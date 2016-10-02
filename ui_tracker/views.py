@@ -4,4 +4,5 @@ from django.http import HttpResponse
 
 def UITrackerView(request):
     # import pdb; pdb.set_trace();
+    print('elielieliiiii: '+request.META['QUERY_STRING'])
     return HttpResponse(status=204)
