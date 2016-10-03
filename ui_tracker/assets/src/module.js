@@ -86,7 +86,10 @@ class UITrackerModule extends KolibriModule {
   }
 
   /*
-  calculate scroll percentage.
+  return scroll percentage at the step of 10 percent.
+  e.g. percent = 7; return 0
+       percent = 10; return 10
+       percent = 19.999; return 10
   */
   scrollNormalizedPercent(element) {
     const st = 'scrollTop',
@@ -130,7 +133,6 @@ class UITrackerModule extends KolibriModule {
     let scrollTrackElement_1;
     const that = this;
     document.onclick = function(e) {
-      // window.eli = e;
       clickQuery.apply(that, [e]);
     };
     document.onmouseover = function(e) {
@@ -148,7 +150,7 @@ class UITrackerModule extends KolibriModule {
       }
     }, 500);
 
-    //limit the calls to scrollQuery at 100 ms per call
+    //limit the calls to scrollQuery at 100 ms per call on scroll
     setInterval(function() {
       if(scrollState.getDidScroll()) {
         scrollState.setDidScroll(false);
