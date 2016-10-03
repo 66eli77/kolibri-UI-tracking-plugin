@@ -1,5 +1,6 @@
 *.py[cod]
 *.pyc
+ui_tracking.txt
 
 # C extensions
 *.so

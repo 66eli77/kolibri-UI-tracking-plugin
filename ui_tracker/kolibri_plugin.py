@@ -11,13 +11,12 @@ class UITrackerPlugin(KolibriPluginBase):
         return urls
 
     def url_slug(self):
-        return "^ui_tracker.png"
+        return "^ui_tracker"
 
 
 class UITrackerAsset(webpack_hooks.WebpackBundleHook):
     unique_slug = "ui_tracker_module"
     src_file = "assets/src/module.js"
-
 
 
 class UITrackerInclusionHook(webpack_hooks.FrontEndBaseSyncHook):
